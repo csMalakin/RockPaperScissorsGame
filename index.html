@@ -1,1 +1,99 @@
-test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/reset.css">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <section class="wrapper">
+    <h1>Rock Paper Scissors</h1>
+    <!-- Choose Best of 3 to 7 -->
+    <section class="bestOfSelection">
+        <span>Choose a Best of Variant</span>
+    <ul>
+        <li><a id="bestOf3" class="button" href="#">3</a></li>
+        <li><a id="bestOf5" class="button" href="#">5</a></li>
+        <li><a id="bestOf7" class="button" href="#">7</a></li>
+    </ul>
+    <!-- Show selection -->
+    <h3 id="bestOf"></h3>
+    </section>
+    
+    
+    <!-- Scoreboard -->
+    <section class="score">
+        <div id="winner" class="hidden">
+            <h1>Congratulation you are the Winner!!!</h1>
+        </div>
+        <div id="loser" class="hidden">
+            <h1>Sorry but you lost this game</h1>
+        </div>
+        <div id="default" class="clearfix">
+            <div class="player">
+                <span >Player</span> 
+                <span id="playerScore"></span>
+            </div>
+            <div class="divider">
+                <span>-</span>
+            </div>
+        <div class="computer">
+            
+            <span>Computer</span>
+            <span id="computerScore"></span>
+        </div>
+        </div>  
+        
+    </section>
+
+    <!-- Played hands -->
+    <section class="game">
+        
+            <div class="playerHand">
+                <img id="playerPlaceholder" src="assets/images/Random.png" alt="">
+                <img id="playerRock" src="assets/images/Rock.png" alt="" class="hidden">
+                <img id="playerPaper" src="assets/images/Paper.png" alt="" class="hidden">
+                <img id="playerScissor" src="assets/images/Scissors.png" alt="" class="hidden">
+            </div>            
+            
+            <div class="handDivider">
+                <span >vs</span>
+            </div>
+     
+            
+            <div class="computerHand">
+            <img id="computerPlaceholder" src="assets/images/Random.png" alt="">
+            <img id="computerRock" src="assets/images/Rock.png" alt="" class="hidden">
+            <img id="computerPaper" src="assets/images/Paper.png" alt="" class="hidden">
+            <img id="computerScissor" src="assets/images/Scissors.png" alt="" class="hidden">
+            
+            </div>
+        </div>  
+    </section>
+
+    <!-- What Hand will be played -->
+    <h2 id="result"></h2>
+
+    <section class="hands">
+        <h3>Choose a Hand to play</h3>
+        <img id="rock"  src="assets/images/Rock.png" alt="">
+
+        <img id="paper"src="assets/images/Paper.png" alt="">
+        
+        <img id="scissor" src="assets/images/Scissors.png" alt="">
+    </section>
+</section>
+
+<script src="assets/main.js"></script>
+</body>
+</html>

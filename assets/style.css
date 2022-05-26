@@ -1,0 +1,206 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: 'Rubik', sans-serif;
+     text-align: center;
+     
+}
+h1, h2, h3, h4 , h5, h6, p, span {
+     padding: 0.2em 0;
+}
+
+
+h1, h2, h3, h4 , h5, h6 {
+     font-weight: 700;
+}
+
+h1{
+     font-size: 2.6em;
+     border-top: 2px dotted black;
+     border-bottom: 2px dotted black;
+   
+   
+}
+h2{
+     font-size: 2em
+}
+h3 {
+     font-size: 1.5em;
+}
+span, a, ul {
+     display: block;
+}
+li {
+     display: inline-block;
+}
+.button {
+     padding: 5px;
+     border: 2px solid black;
+     border-radius: 5px;
+     width: 5em;
+     text-decoration: none;
+     color: black;
+     font-weight: 300;
+}
+
+
+.wrapper{
+     background-color: aquamarine;
+     
+     width: 85vw;
+     border-radius: 15px;
+     margin: 1% auto;
+     
+     padding: 3em 0;
+}
+
+/**************************************************************************** Best Of
+
+*****************************************************************************/
+
+.bestOfSelection {
+     font-weight: 700;
+     font-size: 1.2em;
+}
+.bestOfSelection h3 {
+     font-size: 1.6em;
+}
+/**************************************************************************** 
+Score Board 
+
+*****************************************************************************/
+.score {
+     font-size: 1.5em;
+     
+     border-radius: 20px;
+     margin: 0 15%;
+     border: 2px dotted black;
+
+}
+
+
+.player, .computer {
+     width: 45%;
+     float: left;
+}
+.player {
+   padding-left: 30%;
+}
+.computer {
+     padding-right:30%
+}
+.computer span:last-child,.player span:last-child  {
+     font-weight: 700;
+     font-size: 1.5em;
+     padding-top: 0;
+}
+
+.divider {
+     float: left;
+     width: 10%;
+}
+
+/**************************************************************************** 
+Played Hands
+
+*****************************************************************************/
+.game {
+     display: flex;
+     justify-content: space-around
+}
+.playerHand {
+     padding-left: 15%;
+}
+.computerHand {
+     padding-right: 15%;
+}
+.handDivider{
+     font-size: 5em;
+     align-self: center;
+}
+
+.game img {
+     height: 200px;
+     width: auto
+}
+/**************************************************************************** 
+Choose Hand 
+
+*****************************************************************************/
+.hands{
+     background-color: lightblue;
+     border-radius: 20px;
+     margin: 0 15%;
+     text-align: center;
+      
+
+}
+.hands img {
+     display: inline-block;
+     cursor: pointer;  
+}
+
+.hands h3 {
+     font-size: 1.5em;
+     padding-top: 1.5em;
+}
+
+.hands img {
+     height: 150px;
+     width: auto;
+     padding: 5px;
+     border: 1px solid black;
+     border-radius: 50%;
+     margin: 2em;
+
+    
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.hidden {
+     display: none;
+}
+
+.active {
+     background-color: rgb(223, 241, 118);
+}
+#bestOf{
+     height: 1.5em;
+}
+
+#result{
+     height: 1.5em;
+}
