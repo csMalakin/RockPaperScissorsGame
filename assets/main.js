@@ -218,7 +218,7 @@ document.querySelector('#computerScore').innerText = computerScore
 
 function showResult(){
     if(gameOverCheck===true){
-        document.querySelector('#result').innerText = `The Final Score of the game was Player: ${savePlayerScore}  Computer: ${saveComputerScore}`
+        document.querySelector('#result').innerHTML = `The Final Score of the game was </br> Player: ${savePlayerScore}  Computer: ${saveComputerScore}`
     }
 }
 

@@ -202,7 +202,7 @@ Choose Hand
 }
 
 .result{
-     height: 1.5em;
+     min-height: 1.5em;
 }
 
 @media all and (max-width: 820px) {
@@ -240,6 +240,12 @@ Choose Hand
   
      h2,h3,h4,h5,h6,.hands h3,.bestOfSelection h3 {
           font-size: 1em;
+     }
+
+     .handDivider {
+          font-size: 2em;
+          align-self: center;
+          padding: 10% 0;
      }
    
 }
