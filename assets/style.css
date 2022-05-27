@@ -140,7 +140,7 @@ Played Hands
      align-self: center;
 }
 .game .playerHand, .game .computerHand {
-     height: 15em;
+     height: 12.5em;
 }
 .game img {
      height: 100%;
@@ -170,7 +170,7 @@ Choose Hand
 }
 
 .hands img {
-     height: 150px;
+     height: 10em;
      width: auto;
      padding: 5px;
      border: 1px solid black;
