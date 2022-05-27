@@ -163,7 +163,7 @@ Choose Hand
 
 .hands h3 {
      font-size: 1.5em;
-     padding-top: 1.5em;
+    
 }
 
 .hands img {
@@ -172,10 +172,13 @@ Choose Hand
      padding: 5px;
      border: 1px solid black;
      border-radius: 50%;
-     margin: 2em;
-
-    
+     margin: 2em;    
 }
+
+.hands>* {
+     padding: 1em 0;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/

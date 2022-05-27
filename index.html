@@ -20,12 +20,14 @@
     <h1>Rock Paper Scissors</h1>
     <!-- Choose Best of 3 to 7 -->
     <section class="bestOfSelection">
+        <div id="bestOfSelection">
         <span>Choose a Best of Variant</span>
     <ul>
         <li><a id="bestOf3" class="button" href="#">3</a></li>
         <li><a id="bestOf5" class="button" href="#">5</a></li>
         <li><a id="bestOf7" class="button" href="#">7</a></li>
     </ul>
+        </div>
     <!-- Show selection -->
     <h3 id="bestOf"></h3>
     </section>
@@ -81,17 +83,58 @@
         </div>  
     </section>
 
-    <!-- What Hand will be played -->
+   
     <h2 id="result"></h2>
-
+ <!-- Reacitve window -->
     <section class="hands">
+        <!-- Need to select a variant -->
+        <div id="selectVariantFirst" >
+            <h3>Please choose a Variant first to play</h3>
+        </div>
+        
+         <!-- What Hand will be played -->
+        <div id="chooseHand" class="hidden">
         <h3>Choose a Hand to play</h3>
         <img id="rock"  src="assets/images/Rock.png" alt="">
 
         <img id="paper"src="assets/images/Paper.png" alt="">
         
         <img id="scissor" src="assets/images/Scissors.png" alt="">
+        </div>
+
+       
+         <!-- Want another game -->
+        <div id="wannaRestart" class="hidden">
+            <h3>Wanna Play another Game of Rock Paper Scissors?</h3>
+            <ul>
+                <li><a id="yesPlayAgain" class="button" href="#">Yes</a></li>
+                <li><a id="noPlayAgain" class="button" href="#">No</a></li>
+              
+            </ul>
+        </div>
+        <!-- Done Playing -->
+        <div id="thanksForPlaying" class="hidden">
+            <h1>Thanks for Playing!</h1>
+        </div>
+
+        <!-- I want play more -->
+
+        <div id="chooseToPlayAgain" class="hidden">
+            <h3>Select you variant to play again</h3>
+            <ul>
+                <li><a id="bestOf3Again" class="button" href="#">3</a></li>
+                <li><a id="bestOf5Again" class="button" href="#">5</a></li>
+                <li><a id="bestOf7Again" class="button" href="#">7</a></li>
+              
+            </ul>
+        </div>
+
+
+
+
     </section>
+    
+    
 </section>
 
 <script src="assets/main.js"></script>
