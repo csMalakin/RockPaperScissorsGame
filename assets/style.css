@@ -139,10 +139,13 @@ Played Hands
      font-size: 5em;
      align-self: center;
 }
-
+.game .playerHand, .game .computerHand {
+     height: 15em;
+}
 .game img {
-     height: 200px;
-     width: auto
+     height: 100%;
+     width: auto;
+     aspect-ratio: 1/1;
 }
 /**************************************************************************** 
 Choose Hand 
@@ -198,6 +201,51 @@ Choose Hand
      height: 1.5em;
 }
 
-#result{
+.result{
      height: 1.5em;
+}
+
+@media all and (max-width: 820px) {
+     .player{
+          padding-left: 0;
+     }
+     .computer {
+          padding-right: 0;
+     }
+
+     .score {
+          width: 100%;
+          margin:0;
+     }
+     .game .playerHand, .game .computerHand, .game .handDivider {
+          height: 7.5rem;
+     }
+     
+     .bestOf{
+          margin-bottom:1em
+     }
+     .hands img {
+          height:5em;
+          padding:0.1em ;
+          margin:0;
+     }
+     .result {
+          height: auto;
+          
+          margin-bottom:0.5em
+     }
+     h1 {
+          font-size: 1.8em;
+     }
+  
+     h2,h3,h4,h5,h6,.hands h3,.bestOfSelection h3 {
+          font-size: 1em;
+     }
+   
+}
+
+@media all and (max-width:350px) {
+     body>*{
+          min-width: 100%;
+     }
 }
